@@ -17,7 +17,7 @@ require(['aura/aura'], function (Aura) {
   */
   app.start({ components: 'body' }).then(function () {
     // This listener no longer responds.
-    app.sandbox.on('get.random', function(data) {
+    app.core.mediator.on('get.random', function(data) {
       data.callback(Math.random());
     });
   });
