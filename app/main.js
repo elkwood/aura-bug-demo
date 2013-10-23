@@ -17,7 +17,7 @@ require(['aura/aura'], function (Aura) {
   */
   app.start({ components: 'body' }).then(function () {
     app.sandbox.on('get.random', function(data) {
-      data.callback.apply(this, [Math.random()]);
+      data.callback(Math.random());
     });
     console.log('Aura started...');
   });
