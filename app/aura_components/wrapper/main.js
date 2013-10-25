@@ -5,9 +5,9 @@ define(['underscore'], function (_) {
 
     initialize: function () {
       // This listener no longer responds.
-      this.sandbox.on('get.random', function(data) {
-        data.callback(Math.random());
-      });
+      // this.sandbox.on('get.random', function(data) {
+      //   data.callback(Math.random());
+      // });
       this.render();
     },
 
